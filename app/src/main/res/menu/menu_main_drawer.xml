@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/nav_dashboard" />
+
+        <item android:title="@string/nav_my_audit">
+            <menu>
+
+                <item
+                    android:id="@+id/nav_templates"
+                    android:checkable="true"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="@string/nav_templates" />
+                <item
+                    android:id="@+id/nav_incomplete"
+                    android:checkable="true"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="@string/nav_incomplete" />
+                <item
+                    android:id="@+id/nav_complete"
+                    android:checkable="true"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="@string/nav_complete" />
+
+                <item
+                    android:id="@+id/nav_history"
+                    android:checkable="true"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="@string/nav_history" />
+            </menu>
+        </item>
+
+    </group>
+
+    <item android:title="@string/nav_my_tasks">
+        <menu>
+            <item
+                android:id="@+id/nav_sync"
+                android:checkable="true"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/nav_synchronization" />
+            <item
+                android:id="@+id/nav_account"
+                android:checkable="true"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/nav_my_account" />
+        </menu>
+    </item>
+
+</menu>
